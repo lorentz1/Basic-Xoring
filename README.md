@@ -1,19 +1,12 @@
-Este código em C demonstra como a operação XOR (ou exclusivo) funciona:
+Este programa em C usa o método de criptografia XOR para criptografar uma string. Ele usa uma chave que também pode ser usada para descriptografar o texto. Quando criptografado, o texto é convertido em hexadecimal. O usuário pode usar esse hexadecimal junto com a mesma chave usada na criptografia para reverter e obter o texto original.
 
-Criptografia XOR:
+Funcionamento:
 
-O código permite que o usuário criptografe e descriptografe texto usando uma chave XOR.
-Na criptografia XOR, cada caractere do texto original é "misturado" com a chave usando a operação XOR.
-Para descriptografar, a mesma chave é usada para reverter o processo e recuperar o texto original.
-Funcionamento do XOR:
+- O programa solicita ao usuário uma chave alfabética.Em seguida, solicita uma string de até 100 caracteres para criptografar.
+- O texto é criptografado usando a chave XOR e convertido para hexadecimal.
+- O texto criptografado e a chave são exibidos.
+- O usuário também pode escolher descriptografar usando o texto criptografado e a mesma chave.
 
-Na operação XOR, dois bits são comparados:
-Se os bits forem diferentes, o resultado é 1.
-Se os bits forem iguais, o resultado é 0.
-Por exemplo:
-
-0 XOR 0 = 0
-0 XOR 1 = 1
-1 XOR 0 = 1
-1 XOR 1 = 0
-Essa operação é usada para "embaralhar" o texto original e protegê-lo com uma chave. No código, a chave é uma letra fornecida pelo usuário e é usada para criptografar e descriptografar o texto usando a operação XOR.
+>A criptografia XOR usa a operação XOR bit a bit entre a chave e o texto.
+Isso cria um texto criptografado em hexadecimal que pode ser revertido usando a mesma chave.
+Esse programa é um exemplo simples de como a criptografia XOR pode ser implementada em C para criptografar e descriptografar texto usando uma chave específica.
